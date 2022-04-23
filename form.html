@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            background-color: #ffffff;
+            left:0px;
+            right:0px;
+            bottom:0px;
+            top:0px;
+            color: black;
+            text-align: center;
+        }
+        form{
+            background-color: #ededed;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: space-around;
+            width: 55%;
+            margin-left: 20%;
+            font-size: 20px;
+            text-align: left;
+            border-radius: 10px;
+        }
+        div{
+            margin-top: 30px;
+        }
+        .data{
+            margin-left: 200px;
+            width : 200px;
+            height: 25px;
+        }
+        select{
+            margin-left: 200px;
+            width : 200px;
+        }
+        .selective{
+            margin-left: 250px;
+        }
+        button{
+            margin-left: 35%;
+            margin-top: 30px;
+            width: 150px;
+            height: 30px;
+            display: block;
+            background-color: green;
+            color: white;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        label{
+            margin-left: 10px;
+        }
+    </style>
+    <body>
+        <h1><u>Student Registration Form</u></h1>
+        <form action="#">
+            <div>
+                <label>
+                    Enter the Student name :
+                </label>
+                <input type="text" required class="data"/>
+            </div>
+            <div>
+                <label>
+                    Upload student photo :
+                </label>
+                <input type="file" required class="data"/>
+            </div>
+            <div>
+                <label>
+                    Enter the Father name :
+                </label>
+                <input type="text" required class="data"/>
+            </div>
+            <div>
+                <label>
+                    Enter the Mother name :
+                </label>
+                <input type="text" required class="data"/>
+            </div>
+            <div>
+                <label>
+                    Select Gender :
+                </label>
+                <input type="radio" name="gen" value="Male" class="selective">Male</input>
+                <input type="radio" name="gen" value="Female">Female</input>
+            </div>
+            <div>
+                <label>
+                    Select the Date of Birth :
+                </label>
+                <input type="date" required class="data"/>
+            </div>
+            <div>
+                <label>
+                    Enter the Phone number :
+                </label>
+                <input type="tel" maxlength="10" class="data" required/>
+            </div>
+            <div>
+                <label>
+                    Enter the E-Mail ID :
+                </label>
+                <input type="email" required class="data"/>
+            </div>
+            <div>
+                <label>
+                    Select the programme  :
+                </label>
+                <input type="checkbox" name="deg"  class="selective">Degree</input>
+                <input type="checkbox" name="deg">Diploma</input>
+            </div>
+            <div>
+                <label>
+                    Select the Department  :
+                </label>
+                <select  size=4 multiple>
+                    <option value="civil">CIVIL</option>
+                    <option value="cse">CSE</option>
+                    <option value="ece">ECE</option>
+                    <option value="electronic">ELECTRONICS</option>
+                    <option value="mech">MECHANICAL</option>
+                    <option value="hotel">HOTEL MANG.</option>
+                    <option value="it">IT</option>
+                </select>
+            </div>
+            <div>
+                <label>
+                    Enter the 10th marks :
+                </label>
+                <input type="text" required class="data"/>
+            </div>
+            <div>
+                <label>
+                    Enter the 12th marks :
+                </label>
+                <input type="text" required class="data"/>
+            </div>
+            <div>
+                <label>
+                    Upload 10th marksheet :
+                </label>
+                <input type="file" required class="data"/>
+            </div>
+            <div>
+                <label>
+                    Upload 12th marksheet :
+                </label>
+                <input type="file" required class="data"/>
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+        </form>
+    </body>
+</html>
